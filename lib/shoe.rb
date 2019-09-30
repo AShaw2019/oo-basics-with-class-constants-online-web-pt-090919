@@ -15,6 +15,13 @@ BRAND = []
 
   def brand=(brand)
     @brand = brand
-    BRAND << brand
+    BRAND << brandunless BRANDS.any? { |b| b == brand }
+  end	
+
+
+
+
+  def cobble	 
+    self.condition = "new"	    
 end
 end
