@@ -15,7 +15,7 @@ BRAND = []
 
   def brand=(brand)
     @brand = brand
-    BRAND << brandunless BRANDS.any? { |b| b == brand }
+    BRAND << brand unless BRANDS.any? { |b| b == brand }
   end	
 
 end
